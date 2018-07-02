@@ -1,15 +1,15 @@
 katz_deli = []
 def line(katz_deli)
-  if katz_deli.length == 0
+  if line.length == 0
     puts "The line is currently empty."
-  elsif katz_deli.length > 0
-    line = ["The line is currently:"]
-    katz_deli.each_with_index do |name, index|
-      line << " #{index + 1}. #{name}"
+  elsif line.length > 0
+    line_status = "The line is currently:"
+    line_status.each do |name, index|
+      line_status << " #{index}. #{name}"
     end
-    puts line.join
-  end
+  end 
 end
+
 
 def take_a_number(katz_deli_with_index, name)
   puts "Welcome, #{name}. You are number [index + 1] in line."
