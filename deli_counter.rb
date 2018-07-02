@@ -7,7 +7,7 @@ def line(katz_deli)
     katz_deli.each do |name, index|
       line_status << " #{index}. #{name}"
     end
-    puts line_status.join
+    puts katz_deli.join
   end
 end
 
