@@ -6,6 +6,7 @@ def line(katz_deli)
     line = ["The line is currently:"]
     katz_deli.each_with_index do |name, index|
       line << name
+      line << index 
     end
     puts line.join
   end
